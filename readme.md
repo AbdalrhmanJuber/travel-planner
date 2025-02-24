@@ -48,4 +48,4 @@ Refer to the `package.json` for exact versions. Key packages include:
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/AbdalrhmanJuberv/travel-planner.git
+   git clone [https://github.com/AbdalrhmanJuberv/travel-planner.git](https://github.com/AbdalrhmanJuber/travel-planner.git)
