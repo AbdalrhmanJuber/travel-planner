@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <!-- No direct link to style.css since styles are bundled via Webpack -->
+</head>
+<body>
+  <div id="app">
+    <h1 class="headline">Travel Planner</h1>
+
+    <!-- User Input Section -->
+    <section class="user-input">
+      <label for="city">Enter City Name:</label>
+      <input type="text" id="city" placeholder="Enter city name here">
+      
+      <label for="departure">Departure Date:</label>
+      <input type="date" id="departure">
+      
+      <button id="generate" type="submit">Generate Trip</button>
+    </section>
+
+    <!-- Trip Display Section (Dynamically Updated) -->
+    <section class="trip-container">
+      <div class="trip-card">
+        <!-- Default image is a placeholder -->
+        <img src="https://via.placeholder.com/400x200?text=No+Image+Found" id="trip-image" alt="Destination Image" class="trip-image">
+        <div class="trip-details">
+          <h2>My trip to: <strong id="trip-location">---</strong></h2>
+          <p><strong>Departing:</strong> <span id="trip-date">---</span></p>
+          <p><span id="trip-location-text">---</span> is <span id="days-away">---</span> days away.</p>
+          <p><strong>Typical weather for then is:</strong></p>
+          <p>High - <span id="high-temp">---</span>°F, Low - <span id="low-temp">---</span>°F</p>
+          <p id="weather-description">---</p>
+          <div class="button-group">
+            <button class="save-trip">Save Trip</button>
+            <button class="remove-trip">Remove Trip</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
