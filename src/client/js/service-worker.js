@@ -2,7 +2,7 @@
 
 const CACHE_NAME = 'travel-app-cache-v1';
 const urlsToCache = [
-  '/', // Ensure your index.html is cached
+  '/', 
   '/index.html',
   '/bundle.js',
   // If you have extracted CSS, add its path here (e.g., '/styles/style.css')
