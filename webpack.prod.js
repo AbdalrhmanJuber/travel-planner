@@ -3,13 +3,17 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin'); // <-- ADD THIS
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
     optimization: {
-        minimizer: [new TerserPlugin({})],
+        minimizer: [
+            new TerserPlugin({}), 
+            new CssMinimizerPlugin() // <-- ADD CSS MINIMIZER
+        ],
     },
     module: {
         rules: [
