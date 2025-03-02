@@ -2,6 +2,9 @@
 
 A **FEND Capstone** project that allows users to plan future trips by entering a city and a departure date. The app fetches **geographical data** from **Geonames**, **future weather forecasts** from **Weatherbit**, and **destination images** from **Pixabay**. It also saves trip data in **Local Storage** and supports **offline capabilities** with a **service worker**.
 
+![image](https://github.com/user-attachments/assets/01fa856d-7536-44e7-b4de-9ff8e8470899)
+
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Node.js Version](#nodejs-version)
