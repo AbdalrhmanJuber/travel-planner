@@ -17,6 +17,13 @@ module.exports = {
     devServer: { 
         static: path.resolve(__dirname, 'dist'),
         port: 8080,
+        proxy: {
+            '/tripData': {
+                target: 'http://localhost:3000',
+                secure: false,
+                changeOrigin: true
+              }
+          },
         hot: true,
         open: true,
         historyApiFallback: true 
