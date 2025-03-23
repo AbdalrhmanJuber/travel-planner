@@ -1,8 +1,5 @@
 // src/server/index.js
 
-// ------------------------------------------------------------------
-// 1. SETUP
-// ------------------------------------------------------------------
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -23,9 +20,9 @@ app.use(cors());
 // Initialize the main project folder to serve the production bundle
 app.use(express.static('dist'));
 
-const geoUsername   = process.env.GEONAMES_USERNAME;
-const weatherbitKey = process.env.WEATHERBIT_API_KEY;
-const pixabayKey    = process.env.PIXABAY_API_KEY;
+const geoUsername   = "abdelrahman_juber";
+const weatherbitKey = "b144eb429d304a9e812376c38cdfef07";
+const pixabayKey    = "49039988-0e24d471d044d8a491cf7162e";
 
 async function getLocationData(city) {
   const baseURL = 'http://api.geonames.org/searchJSON';
